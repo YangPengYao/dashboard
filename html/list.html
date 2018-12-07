@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/all.css">
+
+    <title>六角西餐廳</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="dashboard.html">商務控制後台</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="dashboard.html">首頁</a>
+          <a class="nav-item nav-link" href="list.html">列表</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row my-4">
+        <div class="col-sm-3">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control border-primary"  data-toggle="tooltip" data-placement="top" data-html="true" title="<em>按下 Enter 快速搜尋</em>" placeholder="Search for ...">
+            <div class="input-group-prepend round-1 bg-secondary">
+              <span class="input-group-text">Go!</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-auto ml-sm-auto mb-3 text-right">
+          <a href="#" class="btn btn-primary" data-toggle="modal" data-title="快速下單" data-target="#editModal">快速下單</a>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>品項</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>狀態</th>
+              <th class="text-right">金額</th>
+              <th class="text-center">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td class="text-primary">超纖細肥皂 1盒</td>
+              <td>Mark <span class="badge badge-danger badge-pill">奧客</span></td>
+              <td>Mark@gmail.com</td>
+              <td>已出貨</td>
+              <td class="text-right">NT$ 899</td>
+              <td class="text-center">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-title="編輯 超纖細肥皂盒 1盒" data-target="#editModal" data-backdrop="static">編輯</button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-title="查看" data-target="#editModal">查看</button>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                      ...
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-title="操作記錄" data-target="#editModal">操作記錄</a>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-title="確認匯出" data-target="#checkModal">資料匯出</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item text-danger" href="#" data-toggle="modal" data-title="超纖細肥皂盒 1盒" data-target="#removeModal">刪除</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="bg-warning">
+              <th>2</th>
+              <td class="text-primary">(保證)無泡泡沐浴乳 5罐</td>
+              <td>Jacob <span class="badge badge-success badge-pill">常客</span></td>
+              <td>Jacob@gmail.com</td>
+              <td class="text-danger">缺貨</td>
+              <td class="text-right">NT$ 3,600</td>
+              <td class="text-center">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-title="編輯 (保證)無泡泡沐浴乳 5罐" data-target="#editModal" data-backdrop="static">編輯</button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-title="查看" data-target="#editModal">查看</button>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                      ...
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-title="操作記錄" data-target="#editModal">操作記錄</a>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-title="確認匯出" data-target="#checkModal">資料匯出</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item text-danger" href="#" data-toggle="modal" data-title="(保證)無泡泡沐浴乳 5罐" data-target="#removeModal">刪除</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td class="text-primary">防滑燈罩 100個</td>
+              <td>Larry</td>
+              <td>Larry@gmail.com</td>
+              <td>已出貨</td>
+              <td class="text-right">NT$ 14,060</td>
+              <td class="text-center">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-title="編輯 防滑燈罩 100個" data-target="#editModal" data-backdrop="static">編輯</button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-title="查看" data-target="#editModal">查看</button>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                      ...
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-title="操作記錄" data-target="#editModal">操作記錄</a>
+                      <a class="dropdown-item" href="#" data-toggle="modal" data-title="確認匯出" data-target="#checkModal">資料匯出</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item text-danger" href="#" data-toggle="modal" data-title="防滑燈罩 100個" data-target="#removeModal">刪除</a>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">...</td>
+            </tr>
+            <tr>
+              <td colspan="7">...</td>
+            </tr>
+            <tr>
+              <td colspan="7">...</td>
+            </tr>
+            <tr>
+              <td colspan="7">...</td>
+            </tr>
+            <tr>
+              <td colspan="7">...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <nav>
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+
+    <footer class=" bg-light text-center text-secondary py-3">
+      <div>
+          六角學院後台管理系統
+      </div>
+    </footer>
+
+    <!-- editModal -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+            <button type="button" class="btn btn-outline-primary" data-dismiss="modal">儲存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- removeModal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-danger">
+            <h5 class="modal-title text-white" id="removeModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">確認刪除</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- checkModal -->
+    <div class="modal fade" id="checkModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="editModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+            <button type="button" class="btn btn-outline-info" data-dismiss="modal">確認</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- javerscript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="../js/list.js"></script>
+  </body>
+</html>
